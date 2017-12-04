@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerobak Nusantara</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-transparent navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Hello !</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a></li>              
+              <li><a href="#">Menu</a></li>              
+              <li><a href="#">Lokasi</a></li>              
+              <li><a href="#">Galeri</a></li>              
+              <li><a href="#">Kontak</a></li>              
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <section id="header">
+        <div class="center-content">
+          <h1 class="hero-title">Gerobak Nusantara</h1>
+          <h2 class="hero-subtitle">Makanan Tradisional Khas Indonesia</h2>
+        </div>
+      </section>
+      <section id="about" class="padding-lg">
+        <div class="container">
+          <div class="text-center white-text">
+              <h3 class="title-section text-center">Tentang Gerobak Nusantara</h3>
+              <p class="small-desc">
+                Gerobak Nusantara merupakan sebuah rumah makan modern yang menyajikan jamuan makanan tradisional khas Indonesia. Rumah makan yang berlokasi di wilayah Bali ini sudah berdiri sejak tahun 1980. Kami sudah menyajikan berbagai macam makanan tradisional mulai dari sabang sampai merauke. Dengan juru masak yang handal dan terlatih, makanan yang kami sajikan menjadi sangat enak dan tentunya jauh dari bahan bahan berbahaya.
+              </p>
+              <!-- <img src="img/food.png" alt="" style="position : absolute;bottom : 30px; right : 30px;width : 200px"> -->
+          </div>
+          
+        </div>
+      </section>
+      <section id="new-menu" class="padding-lg">
+        <div class="container">
+          <div class="text-center">
+            <h3 class="title-section">Menu Minggu Ini</h3>
+          </div>
+        </div>
+      </section>
+</body>
+<script>
+  $(window).scroll(function(e) {
+    if ($(this).scrollTop() > 0) {
+      $("nav").removeClass("navbar-transparent");
+      $("nav").addClass("navbar-default");
+    } else {
+      $("nav").removeClass("navbar-default");
+      $("nav").addClass("navbar-transparent");
+    }
+    // alert($(this).scrollTop());
+  })
+</script>
+</html>
