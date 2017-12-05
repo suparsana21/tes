@@ -1,6 +1,9 @@
 * {
     font-family: Quicksand;
 }
+*,*::after,*::before {
+    /* box-sizing: border-box !important */
+}
 .navbar-transparent {
     background: transparent;
     border: 0;
@@ -16,6 +19,24 @@
 }
 #header {
     height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("../img/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative
+}
+#header-page {
+    height: 30vh;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("../img/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative
+}
+#parallax {
+    height: 300px;
     background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("../img/bg.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -42,7 +63,7 @@
     letter-spacing: .1em;
     margin-top : 25px;
 }
-#about {
+#about,#place,footer {
     background: #212121;
 }
 .padding-lg {
@@ -65,8 +86,17 @@
 section {
     position: relative
 }
+.img-cover {
+    overflow: hidden;
+}
 @media screen and (max-width : 720px) {
     .small-desc{
         width: auto
     }
+}
+.desc {
+    line-height: 2;
+}
+.padding0 {
+    padding: 0 !important;
 }
